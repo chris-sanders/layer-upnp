@@ -1,0 +1,21 @@
+name: layer-upnp
+summary: Adds upnp to expose call
+maintainer: Chris Sanders <sanders.chris@gmail.com>
+description: |
+  This will add a upnp call to request upnp port forwards with expose
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+series:
+  - xenial
+#provides:
+#  provides-relation:
+#    interface: interface-name
+#requires:
+#  requires-relation:
+#    interface: interface-name
+#peers:
+#  peer-relation:
+#    interface: interface-name
