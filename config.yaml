@@ -1,9 +1,9 @@
 options:
   enable-upnp:
     type: boolean
-    default: True
+    default: False
     description: "Attempt to open ports via upnp on port open"
-   #  string-option:
+  #  string-option:
   #    type: string
   #    default: "Default Value"
   #    description: "A short description of the configuration option"
