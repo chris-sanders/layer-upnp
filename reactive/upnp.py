@@ -17,7 +17,8 @@ def open_upnp_port(external_port):
             upnp = miniupnpc.UPnP()
             upnp.discover()
             upnp.selectigd()
-            if upnp.addportmapping(external_port,'tcp',upnp.lanaddr,external_port,'juju expose upnp',''):
+            message = "layer-upnp unit {}".format(hookenv.local_unit())
+            if upnp.addportmapping(external_port,'tcp',upnp.lanaddr,external_port,message,''):
                 hookenv.log('Upnp open successful: {}'.format(external_port),'INFO')
             else:
                 hookenv.log('Upnp open failed: {}'.format(external_port),'WARNING')
