@@ -44,4 +44,3 @@ def close_upnp_port(external_port):
 
 hookenv.open_port = open_upnp_port
 hookenv.close_port = close_upnp_port
-
